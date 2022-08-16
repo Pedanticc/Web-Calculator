@@ -278,6 +278,7 @@ input:focus::placeholder{
 }
 
 .result{
+    font-size: 16px;
     margin-top: 10px;
     width: 250px;
     background-color: rgba(255, 27, 179, 0.1);
