@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'Calculator/Style.css' %}">
+    <title>| Pedantic |</title>
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="nav-bar">
+            <ul class="nav-bar-left-items">
+                <li>About</li>
+                <li>Colors</li>
+                <li id="hire">Hire Me</li>
+            </ul>
+            <div class="led-container">
+                <div class="led"></div>
+            </div>
+        </div>
+
+        <div class="mid-section">
+            <div class="container">
+
+
+                <form action="" class="all-inputs" method="POST" action="sub">
+                    {% csrf_token %}
+                    <div class="bar barrier-2">
+                        <div class="bar bar-1"></div>
+                        <div class="bar bar-2"></div>
+                    </div>
+                    <div class="bar barrier">
+                        <div class="bar bar-1"></div>
+                        <div class="bar bar-2"></div>
+                    </div>
+                    <div class="inputs left-input">
+                        <input type="text" placeholder="?" id="first-number" name="num1">
+                    </div>
+                    <div class="mid-inputs">
+                        <div class="calc-type">
+                            <input type="text" placeholder="X" id="calc-5" name ="types">
+                        </div>
+                        <button class="calc-btn">=</button>
+                    </div>
+                    <div class="inputs right-input">
+                        <input type="text" id="second-number" name="num2" placeholder="?">
+                    </div>
+                </form>
+
+
+                <div class="result">{{result}}</div>
+            </div>
+        </div>
+
+        <div class="tool-tip">
+            <div class="bar bar-4"></div>
+            <div class="bar bar-3"></div>
+            <h3>All 3 functions</h3>
+            <p class="first-func"><a>[x]</a>  To Multiply numbers and that's really obvious.</p>
+            <p><a>[+]</a> To SUM of numbers.</p>
+            <p><a>[-]</a> I... really? just put it in the small box.</p>
+            <p><a>[/]</a> You know....</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,369 @@
+@font-face {
+    src: url(./Fonts/RobotoMono-Light.ttf);
+    font-family: light;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0f151b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.main-container{
+    border: 1px solid rgb(255, 215, 0, 0.3);
+    background-color: #06080a;
+    width: 96%;
+    margin: auto;
+    min-height: 96vh;
+    overflow: hidden;
+}
+
+.main-container .nav-bar{
+    display: flex;
+    font-family: light;
+    color: white;
+    font-size: 12px;
+    /* border: 1px red solid; */
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-top: 10px;
+}
+
+.main-container .nav-bar-left-items{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex: auto;
+    width: 70px;
+    /* border: 1px solid blue; */
+    align-items: center;
+}
+
+.main-container .nav-bar-left-items li{
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.nav-bar-left-items li:hover{
+    color: crimson;
+}
+
+
+.nav-bar-left-items #hire{
+    color: white;
+    background-color: transparent;
+    border: crimson 1px solid;
+    padding: 10px 20px;
+    transition: 300ms;
+}
+
+.main-container .nav-bar-left-items #hire:hover{
+    background-color: crimson;
+    border: 1px solid white;
+}
+
+.led-container{
+    font-weight: 100;
+    list-style: none;
+    font-family: light;
+    flex: auto;
+    justify-self: flex-end;
+    display: flex;
+    justify-content: end;
+}
+
+.led{
+    width:  35px ;
+    height: 35px;
+    border-radius: 100%;
+    background-color: crimson;
+}
+
+
+.mid-section .container{
+    /* border: 1px solid gold; */
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* border: 1px red solid; */
+    margin-top: 40px;
+}
+
+.mid-section .container .all-inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+}
+
+.barrier{
+    width: 20px;
+    height: 150px;
+    position: absolute;
+    left: -250px;
+    top: -50px;
+    background-color: rgb(15, 21, 27, 0.1);
+    border: 1px rgb(255, 215, 0, 0.1) solid;
+    filter: drop-shadow(0 0 0.10rem rgb(252, 228, 13));
+}
+
+.bar-1{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: -50px;
+    top: 20px;
+    background-color: rgb(15, 21, 27, 0.1);
+    border: 1px rgb(255, 215, 0, 0.1) solid;
+}
+
+.bar-2{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: -80px;
+    bottom: -100px;
+    background-color: rgb(15, 21, 27, 0.1);
+    border: 1px rgb(255, 215, 0, 0.1) solid;
+}
+
+.bar-3{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -80px;
+    bottom: -100px;
+    background-color: rgb(15, 21, 27, 0.1);
+    border: 1px rgb(255, 215, 0, 0.1) solid;
+    box-shadow: rgba(238, 255, 0, 0.2) 0px 5px, rgba(255, 196, 0, 0.1) 0px 10px;
+}
+
+.bar-4{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: -80px;
+    bottom: -100px;
+    background-color: rgb(15, 21, 27, 0.1);
+    border: 1px rgb(255, 215, 0, 0.1) solid;
+    box-shadow: rgba(238, 255, 0, 0.2) 0px 5px, rgba(255, 196, 0, 0.1) 0px 10px;
+}
+
+
+.barrier-2{
+    width: 20px;
+    height: 150px;
+    position: absolute;
+    right: -250px;
+    top: -50px;
+    background-color: rgb(15, 21, 27, 0.1);
+    border: 1px rgb(255, 215, 0, 0.1) solid;
+    filter: drop-shadow(0 0 0.10rem rgb(252, 228, 13));
+}
+
+.barrier-2 .bar-1{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -50px;
+    top: 20px;
+    background-color: rgb(15, 21, 27, 0.1);
+    border: 1px rgb(255, 215, 0, 0.1) solid;
+}
+
+.barrier-2 .bar-2{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -80px;
+    bottom: -100px;
+    background-color: rgb(15, 21, 27, 0.1);
+    border: 1px rgb(255, 215, 0, 0.1) solid;
+}
+
+input{
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    font-family: light;
+    color: gold;
+    font-size: 30px;
+    outline: none;
+    padding: 0 5px;
+    filter: drop-shadow(0 3px 0.10rem crimson);
+    transition: 200ms;
+}
+
+input:focus::placeholder{
+    visibility: hidden;
+}
+
+
+.left-input input{
+    width: 80px;
+    height: 80px;
+    /* background-color: #0f151b; */
+    border: 1px crimson solid;
+    /* box-shadow: rgba(240, 46, 170, 0.2) 0px 5px, rgba(240, 46, 170, 0.1) 0px 10px; */
+
+}
+
+.calc-type input{
+    width: 30px;
+    height: 30px;
+    border: 2px rgb(220, 20, 60, 0.2) solid;
+    /* box-shadow: rgba(240, 46, 170, 0.1) 0px 2px, rgba(240, 46, 170, 0.1) 0px 5px; */
+    /* background-color: #0f151b; */
+    padding: 0;
+    font-size: 15px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0 0.10rem crimson);
+    width: 90px;
+    height: 90px;
+    background-color: rgba(255, 0, 149, 0.1);
+}
+
+.right-input input{
+    width: 80px;
+    height: 80px;
+    border: 1px crimson solid;
+    /* box-shadow: rgba(240, 46, 170, 0.2) 0px 5px, rgba(240, 46, 170, 0.1) 0px 10px; */
+    /* background-color: rgb(15, 21, 27, 0.8); */
+}
+
+
+.calc-btn{
+    filter: drop-shadow(0 0 0.10rem crimson);
+    background-color: rgba(255, 196, 0, 0.1);
+    font-family: light;
+    width: 30px;
+    height: 30px;
+    border: 2px rgb(220, 20, 60, 0.2) solid;
+    /* box-shadow: rgba(240, 46, 170, 0.1) 0px 2px, rgba(240, 46, 170, 0.1) 0px 5px; */
+    /* background-color: #0f151b; */
+    padding: 0;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 500ms;
+    margin-top: 5px;
+}
+
+.calc-btn:hover{
+    background-color: rgba(255, 196, 0, 0.2);
+}
+
+.result{
+    margin-top: 10px;
+    width: 250px;
+    background-color: rgba(255, 27, 179, 0.1);
+    border: 1px rgb(255, 0, 0, 0.5) solid;
+    height: 50px;
+    font-family: light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+.tool-tip{
+    margin: auto;
+    min-height: 100px;
+    max-width: 500px;
+    background-color: rgb(15, 21, 27, 0.1);
+    color: white;
+    font-family: light;
+    border: 1px rgb(255, 215, 0, 0.1) solid;
+    width: 90%;
+    min-width: 425px;
+    padding: 10px 10px;
+    filter: drop-shadow(0 0 0.10rem crimson);
+    box-shadow: rgba(238, 255, 0, 0.2) 0px 5px, rgba(255, 196, 0, 0.1) 0px 10px;
+    margin-bottom: 30px;
+}
+
+.tool-tip a{
+    color: gold;
+}
+
+.tool-tip h3{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 3px
+}
+
+.tool-tip p{
+    margin-top: 1px;
+    font-size: 13px;
+}
+
+.tool-tip .first-func{
+    margin-top: 5px;
+}
+
+.bar{
+    animation: apear 0.5s;
+}
+
+@media screen and (max-width: 935px) {
+
+    .bar{
+        animation: disapear 0.5s forwards;
+    }
+
+}
+
+@keyframes disapear {
+    
+    0%{
+        opacity: 0.5;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes apear {
+    
+    0%{
+        opacity: 0.5;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
