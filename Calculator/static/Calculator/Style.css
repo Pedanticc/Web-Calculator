@@ -289,8 +289,90 @@ input:focus::placeholder{
     justify-content: center;
     align-items: center;
     color: white;
-    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px;
 }
+
+.num-pad{
+    filter: drop-shadow(0 0 0.10rem crimson);
+    font-family: light;
+    width: 215px;
+    height: 138px;
+    /* background-color: rgb(255, 0, 0, 0.2); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px 10px;
+    background-color: rgb(15, 21, 27, 0.1);
+}
+
+.left-side-numbers{
+    /* background-color: #0f151b; */
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+.rows{
+    display: flex;
+}
+
+.numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 30px;
+    filter: drop-shadow(0 0 0.10rem crimson);
+    background-color: rgba(255, 196, 0, 0.1);
+    border: 1px rgb(255, 255, 255, 0.5) solid;
+    transition: 200ms;
+    /* border: #0f151b 1px solid; */
+}
+
+.numbers:hover{
+    background-color: rgba(255, 196, 0, 0.2);
+    cursor: pointer;
+}
+
+.num-0{
+    flex: auto;
+}
+
+.right-side-options{
+    flex: 1;
+    height: 75%;
+    align-self: flex-start;
+}
+
+.right-rows{
+    display: flex;
+}
+
+.options{
+    border: 1px crimson solid;
+    width: 50px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0 0.10rem crimson);
+    background-color: rgba(255, 0, 0, 0.1);
+    transition: 200ms;
+}
+
+.options:hover{
+    background-color: rgba(255, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.op-5{
+    flex: auto;
+    height: 60px;
+}
+
 
 .tool-tip{
     margin: auto;
@@ -366,5 +448,19 @@ input:focus::placeholder{
 
     100%{
         opacity: 1;
+    }
+}
+
+@keyframes blink {
+    10%{
+        border: 1px gold solid;
+    }
+
+    50%{
+        border: 1px green solid;
+    }
+
+    100%{
+        border: 1px crimson solid;
     }
 }

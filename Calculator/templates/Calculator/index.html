@@ -23,6 +23,7 @@
 
         <div class="mid-section">
             <div class="container">
+                <div class="result" id="out-put">{{result}}</div>
 
 
                 <form action="" class="all-inputs" method="POST" action="sub">
@@ -42,15 +43,47 @@
                         <div class="calc-type">
                             <input type="text" placeholder="X" id="calc-5" name ="types" maxlength="1">
                         </div>
-                        <button class="calc-btn">=</button>
+                        <button class="calc-btn" id="small_calc_eq">=</button>
                     </div>
                     <div class="inputs right-input">
                         <input type="text" id="second-number" name="num2" placeholder="?" maxlength="5">
                     </div>
                 </form>
-
-
-                <div class="result" id="out-put">{{result}}</div>
+                <div class="num-pad">
+                    <div class="left-side-numbers">
+                        <div class="rows row-1">
+                            <div class="numbers num-1" id="num-1">1</div>
+                            <div class="numbers num-2" id="num-2">2</div>
+                            <div class="numbers num-3" id="num-3">3</div>
+                        </div>
+                        <div class="rows row-2">
+                            <div class="numbers num-4" id="num-4">4</div>
+                            <div class="numbers num-5" id="num-5">5</div>
+                            <div class="numbers num-6" id="num-6">6</div>
+                        </div>
+                        <div class="rows row-3">
+                            <div class="numbers num-7" id="num-7">7</div>
+                            <div class="numbers num-8" id="num-8">8</div>
+                            <div class="numbers num-9" id="num-9">9</div>
+                        </div>
+                        <div class="rows row-4">
+                            <div class="numbers num-0" id="num-0">0</div>
+                        </div>
+                    </div>
+                    <div class="right-side-options">
+                        <div class="right-rows row-1">
+                            <div class="options op-1" id="op-1">+</div>
+                            <div class="options op-2" id="op-2">-</div>
+                        </div>
+                        <div class="right-rows row-2">
+                            <div class="options op-3" id="op-3">x</div>
+                            <div class="options op-4" id="op-4">÷</div>
+                        </div>
+                        <div class="right-rows row-3" id="equals">
+                            <div class="options op-5">=</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
