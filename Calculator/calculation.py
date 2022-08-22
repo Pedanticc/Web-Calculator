@@ -35,14 +35,20 @@ def calculate():
         return result
 
     if operation == "." or operation == "/" or operation == "÷":
-        result = number_1 / number_2
-        if result.is_integer() == True:
-            result = int(result)
+        try:
+            result = number_1 / number_2
+        except ZeroDivisionError:
+            result = ("You wanna divide by 0 ?!!!?")
+            return result
         else:
-            pass
-        print(f"the reuslt of {number_1} / {number_2} is {result}")
-        result = f"{number_1} / {number_2} = {result}"
-        return result
+            if result.is_integer() == True:
+                result = int(result)
+            else:
+                result = round(result, 2)
+            print(f"the reuslt of {number_1} / {number_2} is {result}")
+            result = f"{number_1} ÷ {number_2} = {result}"
+            return result
+
 
 def change_to_int():
     global number_1, number_2, calc_type
@@ -65,15 +71,6 @@ def change_to_int():
         else:
             pass
 
-        # print("all done check info:")
-        # print(f"first number: {number_1}")
-        # print(f"second number: {number_2}")
-        # print(f"operarion type:  {calc_type}")
-        # print("---------------")
-        # print("input types:")
-        # print(f"number_1 type: {type(number_1)}")
-        # print(f"number_2 type: {type(number_2)}")
-        # print(f"calc type: {type(calc_type)}")
         return calculate()
 
 

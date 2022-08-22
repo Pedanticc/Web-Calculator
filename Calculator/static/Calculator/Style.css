@@ -280,7 +280,7 @@ input:focus::placeholder{
 .result{
     font-size: 16px;
     margin-top: 10px;
-    width: 250px;
+    width: 300px;
     background-color: rgba(255, 27, 179, 0.1);
     border: 1px rgb(255, 0, 0, 0.5) solid;
     height: 50px;
@@ -289,7 +289,8 @@ input:focus::placeholder{
     justify-content: center;
     align-items: center;
     color: white;
-    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px;
+    box-shadow: rgba(255, 153, 0, 0.3) 0px 5px, rgba(255, 196, 0, 0.1) 0px 10px;
+    margin-bottom: 10px;
 }
 
 .num-pad{
@@ -388,6 +389,7 @@ input:focus::placeholder{
     filter: drop-shadow(0 0 0.10rem crimson);
     box-shadow: rgba(238, 255, 0, 0.2) 0px 5px, rgba(255, 196, 0, 0.1) 0px 10px;
     margin-bottom: 30px;
+    margin-top: 10px;
 }
 
 .tool-tip a{

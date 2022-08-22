@@ -26,7 +26,7 @@
                 <div class="result" id="out-put">{{result}}</div>
 
 
-                <form action="" class="all-inputs" method="POST" action="sub">
+                <form action="" class="all-inputs" method="POST" action="sub" id="main_form">
                     {% csrf_token %}
                     <div class="bar barrier-2">
                         <div class="bar bar-1"></div>
@@ -80,7 +80,7 @@
                             <div class="options op-4" id="op-4">÷</div>
                         </div>
                         <div class="right-rows row-3" id="equals">
-                            <div class="options op-5">=</div>
+                            <button type="submit" form="main_form" class="options op-5" style="color: white;">=</button>
                         </div>
                     </div>
                 </div>
@@ -92,9 +92,8 @@
             <div class="bar bar-3"></div>
             <h3>Patch Note</h3>
             <p class="first-func"><a>[!]</a> A numpad was added for convenience.</p>
-            <p><a>[!]</a> The equals button on the numpad does not work yet.</p>
-            <p><a>[?]</a> Result number for Division isn't rounded. gotta fix it.</p>
-            <p><a>[?]</a> Enable the big equals button.</p>
+            <p><a>[!]</a> The equals button on the numpad is now functional.</p>
+            <p><a>[?]</a> Result number for Division is now rounded.</p>
         </div>
 
     </div>
